@@ -4,7 +4,7 @@ import { ShoppingBag, Star, Heart } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: 'Crema Viso Idratante',
+    name: 'Crema Viso Idratante 24h',
     category: 'Viso',
     price: '€45',
     image: '/product/1.jpg',
@@ -14,7 +14,7 @@ const products = [
   },
   {
     id: 2,
-    name: 'Siero Vitamina C',
+    name: 'Siero Vitamina C Illuminante',
     category: 'Viso',
     price: '€38',
     image: '/product/2.jpg',
@@ -24,7 +24,7 @@ const products = [
   },
   {
     id: 3,
-    name: 'Smalto Semi-permanente',
+    name: 'Smalto Semipermanente',
     category: 'Unghie',
     price: '€18',
     image: '/product/3.jpg',
@@ -44,7 +44,7 @@ const products = [
   },
   {
     id: 5,
-    name: 'Maschera Viso Rigenerante',
+    name: 'Maschera Notte Rigenerante',
     category: 'Viso',
     price: '€32',
     image: '/product/7.jpg',
@@ -74,7 +74,7 @@ const products = [
   },
   {
     id: 8,
-    name: 'Set Prodotti Viso',
+    name: 'Set Skincare Viso Completo',
     category: 'Viso',
     price: '€85',
     image: '/product/12.jpg',
@@ -93,9 +93,9 @@ const Products = () => {
           <div className="flex justify-center mb-4">
             <ShoppingBag size={48} className="text-secondary" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4 font-playfair">Cura e Bellezza a Casa Tua</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-4 font-playfair">Prodotti a Casa Tua</h2>
           <p className="text-lg text-text-main mb-8 font-lato max-w-3xl mx-auto">
-            Porta a casa la qualità e l'efficacia dei nostri trattamenti. Selezioniamo e offriamo una linea esclusiva di prodotti per la cura personale, scelti per te dalle migliori marche del settore.
+            Porta l'efficacia dei nostri trattamenti anche nella tua routine quotidiana. Puoi acquistare i nostri prodotti direttamente in negozio.
           </p>
         </div>
 
@@ -145,7 +145,14 @@ const Products = () => {
               </div>
             </div>
           ))}
-        </div>        
+        </div>
+        
+        {/* Note */}
+        <div className="text-center mt-12">
+          <p className="text-dark-gray font-lato text-lg">
+            Disponibili in negozio. Per ordini, contattaci via mail o telefono.
+          </p>
+        </div>
       
       </div>
     </section>

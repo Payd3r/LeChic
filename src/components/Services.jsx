@@ -5,50 +5,50 @@ const services = [
   {
     icon: <Hand size={40} className="text-secondary" />,
     title: 'Manicure & Pedicure',
-    description: 'Trattamenti completi per unghie perfette. Offriamo ricostruzione, semipermanente e nail art personalizzata.',
+    description: 'Trattamenti completi per unghie curate e mani perfette.',
     price: 'da €25',
-    duration: '45-60 min',
-    features: ['Ricostruzione gel', 'Semipermanente', 'Nail art', 'Trattamento cuticole']
+    duration: '45–60 min',
+    features: ['Ricostruzione gel', 'Semipermanente', 'Nail art personalizzata', 'Trattamento cuticole']
   },
   {
     icon: <Sparkles size={40} className="text-secondary" />,
     title: 'Trattamenti Viso',
-    description: 'Pulizia profonda, trattamenti anti-età e soluzioni specifiche per ogni tipo di pelle, per un viso luminoso e rigenerato.',
+    description: 'Cura profonda e personalizzata per una pelle luminosa e sana.',
     price: 'da €45',
-    duration: '60-90 min',
-    features: ['Pulizia profonda', 'Anti-età', 'Idratante', 'Mascherine personalizzate']
+    duration: '60–90 min',
+    features: ['Pulizia profonda', 'Trattamenti anti-età', 'Idratazione intensa', 'Maschere viso specifiche']
   },
   {
     icon: <Footprints size={40} className="text-secondary" />,
     title: 'Epilazione Laser',
-    description: 'Tecnologia laser di ultima generazione per una rimozione progressiva e definitiva dei peli superflui, in totale sicurezza.',
+    description: 'Tecnologia avanzata per una pelle liscia e libera dai peli superflui.',
     price: 'da €35',
-    duration: '30-45 min',
-    features: ['Laser Diodo', 'Sicuro e indolore', 'Risultati permanenti', 'Tutte le zone']
+    duration: '30–45 min',
+    features: ['Laser Diodo', 'Trattamento indolore', 'Risultati progressivi e permanenti', 'Adatto a tutte le zone del corpo']
   },
   {
     icon: <Heart size={40} className="text-secondary" />,
     title: 'Massaggi Benessere',
-    description: 'Massaggi rilassanti e decontratturanti per alleviare lo stress e ritrovare il benessere psicofisico.',
+    description: 'Rigenera corpo e mente con massaggi su misura.',
     price: 'da €50',
-    duration: '60-90 min',
-    features: ['Massaggio rilassante', 'Decontratturante', 'Aromaterapia', 'Oli essenziali']
+    duration: '60–90 min',
+    features: ['Rilassanti', 'Decontratturanti', 'Oli essenziali', 'Aromaterapia']
   },
   {
     icon: <Eye size={40} className="text-secondary" />,
     title: 'Trattamenti Occhi',
-    description: 'Trattamenti specifici per la zona perioculare, anti-occhiaie e ringiovanimento dello sguardo.',
+    description: 'Ringiovanisci e illumina lo sguardo con trattamenti mirati.',
     price: 'da €30',
     duration: '30 min',
-    features: ['Anti-occhiaie', 'Ringiovanimento', 'Idratazione', 'Lifting naturale']
+    features: ['Anti-occhiaie', 'Idratazione perioculare', 'Effetto lifting naturale']
   },
   {
     icon: <Scissors size={40} className="text-secondary" />,
-    title: 'Depilazione',
-    description: 'Depilazione professionale con cera calda o fredda per gambe, braccia, viso e zone intime.',
+    title: 'Depilazione Tradizionale',
+    description: 'Depilazione con cera professionale per ogni zona del corpo.',
     price: 'da €20',
-    duration: '30-60 min',
-    features: ['Cera calda/fredda', 'Tutte le zone', 'Risultati duraturi', 'Pelle liscia']
+    duration: '30–60 min',
+    features: ['Cera calda e fredda', 'Gambe, braccia, viso, inguine', 'Pelle liscia e setosa']
   }
 ];
 
@@ -57,9 +57,9 @@ const Services = () => {
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-text-main font-playfair">I Nostri Servizi di Punta</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-text-main font-playfair">Servizi Esclusivi</h2>
           <p className="text-lg text-text-main mt-4 max-w-2xl mx-auto font-lato">
-            Offriamo una gamma di trattamenti esclusivi per esaltare la tua bellezza naturale.
+            Offriamo una gamma di trattamenti pensati per esaltare la tua bellezza, il tuo benessere e farti sentire al meglio.
           </p>
         </div>
 

@@ -22,8 +22,8 @@ const Footer = () => {
 
   const contactInfo = [
     { icon: <MapPin size={16} />, text: 'Via Corogna, 7, 22031 Albavilla (CO)' },
-    { icon: <Phone size={16} />, text: '+39 123 456 7890' },
-    { icon: <Mail size={16} />, text: 'info@lechicbenessere.it' },
+    { icon: <Phone size={16} />, text: '031 626280' },
+    { icon: <Mail size={16} />, text: 'lechicalbavilla@gmail.com' },
     { icon: <Clock size={16} />, text: 'Mar - Sab: 9:00 - 19:00' },
   ];
 
@@ -43,7 +43,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/lechicalbavilla?igsh=bncxbXU1dDBwa2ls" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-white hover:text-secondary transition-colors duration-300 p-2 rounded-full hover:bg-white/10"

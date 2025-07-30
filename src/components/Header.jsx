@@ -73,10 +73,10 @@ const Header = () => {
             className="flex items-center gap-2 text-text-main hover:text-secondary transition-colors duration-300"
           >
             <Phone size={18} />
-            <span className="text-sm font-medium">+39 123 456 7890</span>
+            <span className="text-sm font-medium">031 626280</span>
           </a>
           <a 
-            href="https://instagram.com" 
+            href="https://www.instagram.com/lechicalbavilla?igsh=bncxbXU1dDBwa2ls" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="text-text-main hover:text-secondary transition-colors duration-300 p-2 rounded-full hover:bg-primary/20"
@@ -121,10 +121,10 @@ const Header = () => {
                 className="flex items-center gap-4 text-text-main hover:text-secondary transition-colors duration-300"
               >
                 <Phone size={22} />
-                <span className="text-lg">+39 123 456 7890</span>
+                <span className="text-lg">031 626280</span>
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.instagram.com/lechicalbavilla?igsh=bncxbXU1dDBwa2ls" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center gap-4 text-text-main hover:text-secondary transition-colors duration-300"

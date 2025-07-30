@@ -4,22 +4,22 @@ import { MapPin, Phone, Mail, Clock, Calendar, User, MessageSquare } from 'lucid
 const contactInfo = [
   {
     icon: <MapPin size={24} className="text-secondary" />,
-    text: 'Via Corogna, 7, 22031 Albavilla (CO)',
+    text: 'Via Corogna, 7 – 22031 Albavilla (CO)',
     href: 'https://www.google.com/maps/search/?api=1&query=Via+Corogna,+7,+22031+Albavilla+CO',
   },
   {
     icon: <Phone size={24} className="text-secondary" />,
-    text: '+39 123 456 7890',
-    href: 'tel:+391234567890',
+    text: '031 626280',
+    href: 'tel:+39031626280',
   },
   {
     icon: <Mail size={24} className="text-secondary" />,
-    text: 'info@lechicbenessere.it',
-    href: 'mailto:info@lechicbenessere.it',
+    text: 'lechicalbavilla@gmail.com',
+    href: 'mailto:lechicalbavilla@gmail.com',
   },
   {
     icon: <Clock size={24} className="text-secondary" />,
-    text: 'Mar - Sab: 9:00 - 19:00',
+    text: 'Lunedì: Chiuso Martedì – Venerdì: 9:00 – 19:00 Sabato: 9:00 – 18:00 Domenica: Chiuso',
   },
 ];
 

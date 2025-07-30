@@ -2,28 +2,28 @@ import React from 'react';
 import { Users, Award, Heart, Clock, Star } from 'lucide-react';
 
 const stats = [
-  { icon: <Users size={24} className="text-secondary" />, number: '500+', label: 'Clienti Soddisfatte' },
-  { icon: <Award size={24} className="text-secondary" />, number: '5', label: 'Anni di Esperienza' },
-  { icon: <Heart size={24} className="text-secondary" />, number: '100%', label: 'Soddisfazione' },
-  { icon: <Star size={24} className="text-secondary" />, number: '4.9', label: 'Valutazione Media' }
+  { icon: <Users size={24} className="text-secondary" />, number: '500+', label: 'Clienti soddisfatte' },
+  { icon: <Award size={24} className="text-secondary" />, number: '10+', label: 'Specializzazioni' },
+  { icon: <Star size={24} className="text-secondary" />, number: '4.9/5', label: 'Valutazione media' },
+  { icon: <Clock size={24} className="text-secondary" />, number: '5', label: 'Anni di esperienza' }
 ];
 
 const values = [
   {
     title: 'Professionalità',
-    description: 'Team qualificato e aggiornato sulle ultime tecniche e prodotti del settore.'
+    description: 'Formazione costante e tecniche aggiornate'
   },
   {
     title: 'Personalizzazione',
-    description: 'Ogni trattamento è studiato e adattato alle esigenze specifiche di ogni cliente.'
+    description: 'Ogni trattamento è studiato per te'
   },
   {
     title: 'Qualità',
-    description: 'Utilizziamo solo prodotti di alta gamma e tecnologie all\'avanguardia.'
+    description: 'Solo prodotti e macchinari certificati'
   },
   {
     title: 'Accoglienza',
-    description: 'Un ambiente confortevole e rilassante dove sentirsi a proprio agio.'
+    description: 'Un ambiente familiare e rilassante'
   }
 ];
 
@@ -36,21 +36,18 @@ const About = () => {
           <div className="order-2 md:order-1">
             <h2 className="text-3xl md:text-4xl font-bold text-text-main mb-6 font-playfair">La Nostra Filosofia</h2>
             <p className="text-text-main mb-4 font-lato">
-              Benvenuta a Le Chic, un'oasi di pace dove la tua bellezza e il tuo benessere sono la nostra priorità. Fondato con la passione per l'estetica e la cura della persona, il nostro centro è diventato un punto di riferimento per chi cerca professionalità, innovazione e un'atmosfera accogliente.
-            </p>
-            <p className="text-text-main mb-4 font-lato">
-              Crediamo che ogni persona sia unica. Per questo, ogni trattamento è personalizzato sulle tue esigenze specifiche, utilizzando solo prodotti di altissima qualità e le tecnologie più avanzate del settore.
-            </p>
+            Benvenuta a Le Chic, un'oasi di bellezza e serenità nel cuore di Albavilla. Da oltre 5 anni ci prendiamo cura delle nostre clienti con trattamenti personalizzati, tecnologie innovative e un’attenzione autentica per ogni esigenza. <br />
+            Crediamo che ogni donna meriti un momento per sé, per riscoprirsi e brillare nella propria unicità. </p>
             <p className="text-text-main font-semibold font-lato">
               Vieni a trovarci per riscoprire la tua luce.
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <img 
-              src="/11.jpg" 
-              alt="Sala trattamenti Le Chic" 
+            <img
+              src="/11.jpg"
+              alt="Sala trattamenti Le Chic"
               className="rounded-lg shadow-xl w-full h-auto object-cover"
-              style={{maxHeight: '450px'}}
+              style={{ maxHeight: '450px' }}
             />
           </div>
         </div>
@@ -85,29 +82,29 @@ const About = () => {
         <div className="text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-text-main mb-8 font-playfair">Il Nostro Team</h3>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img 
-              src="/13.jpg" 
-              alt="Team Le Chic" 
+            <img
+              src="/13.jpg"
+              alt="Team Le Chic"
               className="w-full h-64 md:h-96 object-cover"
             />
             <div className="p-8">
               <h4 className="text-xl font-bold text-text-main mb-4 font-playfair">Le Chic di Cinzia</h4>
               <p className="text-dark-gray font-lato mb-4">
-                Il nostro team di professionisti qualificati è pronto ad accoglierti in un ambiente rilassante e professionale. 
-                Ogni membro del nostro staff è specializzato in trattamenti specifici e utilizza solo prodotti di alta qualità.
+                Le Chic di Cinzia è un team di esperte estetiste e professioniste del benessere, pronte ad accoglierti con passione e competenza. <br />
+                Ogni membro è specializzato in trattamenti estetici specifici, per offrirti solo il meglio.
               </p>
               <div className="flex justify-center space-x-4">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-secondary font-playfair">3</div>
-                  <div className="text-sm text-dark-gray font-lato">Professionisti</div>
+                  <div className="text-sm text-dark-gray font-lato">Professioniste qualificate</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-secondary font-playfair">10+</div>
                   <div className="text-sm text-dark-gray font-lato">Specializzazioni</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-secondary font-playfair">24/7</div>
-                  <div className="text-sm text-dark-gray font-lato">Supporto</div>
+                  <div className="text-2xl font-bold text-secondary font-playfair">4.9/5</div>
+                  <div className="text-sm text-dark-gray font-lato">Valutazione media</div>
                 </div>
               </div>
             </div>
