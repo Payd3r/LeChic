@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Heart } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 const results = [
     {
@@ -44,10 +45,11 @@ const Results = () => {
                             style={{ animationDelay: `${index * 0.2}s` }}
                         >
                             <div className="relative">
-                                <img
+                                <OptimizedImage
                                     src={result.image}
                                     alt={result.title}
-                                    className="w-full h-64 object-cover"
+                                    className="w-full h-64"
+                                    priority={index === 0}
                                 />
                                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
                                     <div className="flex items-center gap-1">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 const testimonials = [
   {
@@ -55,10 +56,11 @@ const Testimonials = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center mb-4">
-                <img 
+                <OptimizedImage 
                   src={testimonial.avatar} 
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover mr-3"
+                  className="w-12 h-12 rounded-full mr-3"
+                  priority={false}
                 />
                 <div>
                   <h4 className="font-bold text-text-main font-playfair">{testimonial.name}</h4>

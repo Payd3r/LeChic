@@ -27,6 +27,40 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Preload delle immagini critiche dopo il mount
+  useEffect(() => {
+    const criticalImages = [
+      '/11.jpg',
+      '/13.jpg',
+      '/product/1.jpg',
+      '/product/2.jpg',
+      '/product/3.jpg',
+      '/product/6.jpg',
+      '/product/7.jpg',
+      '/product/8.jpg',
+      '/product/10.jpg',
+      '/product/12.jpg',
+      '/result/4.jpg',
+      '/result/5.jpg',
+      '/result/9.jpg'
+    ];
+
+    // Preload delle immagini con priorità bassa
+    const preloadImages = () => {
+      criticalImages.forEach(src => {
+        const img = new Image();
+        img.src = src;
+      });
+    };
+
+    // Usa requestIdleCallback se disponibile, altrimenti setTimeout
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(preloadImages);
+    } else {
+      setTimeout(preloadImages, 1000);
+    }
+  }, []);
+
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#services', label: 'Servizi' },

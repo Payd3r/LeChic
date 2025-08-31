@@ -6,8 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:analyze": "npm run build && npm run analyze:performance",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "analyze:performance": "node scripts/performance-analysis.js",
+    "docker:build": "docker build -t lechic .",
+    "docker:run": "docker run -p 8080:80 lechic"
   },
   "dependencies": {
     "lucide-react": "^0.533.0",

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShoppingBag, Star, Heart } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 const products = [
   {
@@ -104,10 +105,11 @@ const Products = () => {
           {products.map((product, index) => (
             <div key={product.id} className="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-all duration-300 card-hover animate-fade-in-up" style={{ animationDelay: `${index * 0.1}s` }}>
               <div className="relative">
-                <img 
+                <OptimizedImage 
                   src={product.image} 
                   alt={product.name}
-                  className="w-full h-48 object-cover"
+                  className="w-full h-48"
+                  priority={product.featured}
                 />
                 {product.featured && (
                   <div className="absolute top-2 left-2 bg-secondary text-white px-2 py-1 rounded-full text-xs font-bold">

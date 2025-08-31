@@ -1,5 +1,6 @@
 import React from 'react';
 import { Users, Award, Heart, Clock, Star } from 'lucide-react';
+import OptimizedImage from './OptimizedImage';
 
 const stats = [
   { icon: <Users size={24} className="text-secondary" />, number: '500+', label: 'Clienti soddisfatte' },
@@ -43,11 +44,12 @@ const About = () => {
             </p>
           </div>
           <div className="order-1 md:order-2">
-            <img
+            <OptimizedImage
               src="/11.jpg"
               alt="Sala trattamenti Le Chic"
-              className="rounded-lg shadow-xl w-full h-auto object-cover"
+              className="rounded-lg shadow-xl w-full h-auto"
               style={{ maxHeight: '450px' }}
+              priority={true}
             />
           </div>
         </div>
@@ -82,10 +84,11 @@ const About = () => {
         <div className="text-center">
           <h3 className="text-2xl md:text-3xl font-bold text-text-main mb-8 font-playfair">Il Nostro Team</h3>
           <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img
+            <OptimizedImage
               src="/13.jpg"
               alt="Team Le Chic"
-              className="w-full h-64 md:h-96 object-cover"
+              className="w-full h-64 md:h-96"
+              priority={false}
             />
             <div className="p-8">
               <h4 className="text-xl font-bold text-text-main mb-4 font-playfair">Le Chic di Cinzia</h4>
